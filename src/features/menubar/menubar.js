@@ -1,15 +1,15 @@
 import React from 'react'
 import './menubar.css'
-import { NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
-function MenuBar(){
-    return(
+function MenuBar() {
+    return (
         <div>
-            <header className='menubar'>
-                <NavLink className='menubar-item' to="/about">About</NavLink>
-                <NavLink className='menubar-item'>Yes</NavLink>
-                <NavLink className='menubar-item'>Yes</NavLink>
-            </header>
+            <nav className='menubar'>
+                <NavLink className="menubar-item" to="/">Home</NavLink>
+                <NavLink className="menubar-item" to="/About">About</NavLink>
+                <NavLink className="menubar-item" to="/">Yes</NavLink>
+            </nav>
         </div>
     )
 }
